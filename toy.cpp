@@ -6,7 +6,6 @@
 using namespace llvm;
 
 static LLVMContext Context;
-//static LLVMContext &Context = MyGlobalContext;
 static Module *ModuleOb = new Module("my compiler", Context);
 
 Function *createFunc(IRBuilder<> &Builder, std::string Name){
